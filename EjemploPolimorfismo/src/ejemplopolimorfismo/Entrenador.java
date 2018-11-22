@@ -13,7 +13,7 @@ public class Entrenador extends PersonaEquipo {
 
     private int idFederacion;
 
-   // constructor, getter y setter
+    // constructor, getter y setter
     public Entrenador(int id, String nombre, String apellidos, int edad, int identificador_federacion) {
         super(id, nombre, apellidos, edad);
         idFederacion = identificador_federacion;
@@ -29,8 +29,7 @@ public class Entrenador extends PersonaEquipo {
 
     @Override
     public void entrenamiento() {
-        System.out.printf("%s %s Dirige un entrenamiento (Clase Entrenador) %d\n",this.nombre, this.apellidos, getIdFederacion());
+        System.out.printf("%s %s, dirige un entrenamiento (Clase Entrenador). Su identificación es %d\n", this.nombre, this.apellidos, getIdFederacion());
     }
 
-    
 }

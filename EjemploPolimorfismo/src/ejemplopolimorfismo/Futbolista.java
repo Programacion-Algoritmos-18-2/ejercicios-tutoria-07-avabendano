@@ -11,8 +11,8 @@ package ejemplopolimorfismo;
  */
 public class Futbolista extends PersonaEquipo {
 
-   private int dorsal;
-   private String nombre_demarcacion;
+    private int dorsal;
+    private String nombre_demarcacion;
 
     public Futbolista(int id, String nombre, String apellidos, int edad, int n_dorsal, String demarcacion) {
         super(id, nombre, apellidos, edad);
@@ -35,13 +35,11 @@ public class Futbolista extends PersonaEquipo {
     public void setDemarcacion(String demarcacion) {
         nombre_demarcacion = demarcacion;
     }
-   
-   // constructor, getter y setter
 
-   @Override
-   public void entrenamiento() {
-      System.out.printf("%s %s Realiza un entrenamiento (Clase Futbolista). Su número es %d\n",this.nombre, this.apellidos, getDorsal());
-   }
+    // constructor, getter y setter
+    @Override
+    public void entrenamiento() {
+        System.out.printf("%s %s, realiza un entrenamiento (Clase Futbolista). Su número de dorsal es %d\n", this.nombre, this.apellidos, getDorsal());
+    }
 
-   
 }

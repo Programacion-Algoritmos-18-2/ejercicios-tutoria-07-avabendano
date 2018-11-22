@@ -13,7 +13,7 @@ public class Masajista extends PersonaEquipo {
 
     private String titulacion;
 
-   // constructor, getter y setter
+    // constructor, getter y setter
     public Masajista(int id, String nombre, String apellidos, int edad, String tit) {
         super(id, nombre, apellidos, edad);
         setTitulacion(tit);
@@ -29,7 +29,7 @@ public class Masajista extends PersonaEquipo {
 
     @Override
     public void entrenamiento() {
-        System.out.printf("%s %sDa asistencia en el entrenamiento (Clase Masajista). Su título es %s\n", this.nombre,this.apellidos, getTitulacion());
+        System.out.printf("%s %s,da asistencia en el entrenamiento (Clase Masajista). Su título es %s\n", this.nombre, this.apellidos, getTitulacion());
     }
 
     public void darMasaje() {
