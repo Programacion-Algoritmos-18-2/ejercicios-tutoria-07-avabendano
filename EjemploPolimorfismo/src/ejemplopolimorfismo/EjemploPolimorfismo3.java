@@ -29,7 +29,6 @@ public class EjemploPolimorfismo3 {
         integrantes.add(raulMartinez);
 
         // ENTRENAMIENTO
-        System.out.println("\nEntrenamiento: Todos los integrantes tienen su función en un entrenamiento (Especialización)");
         for (PersonaEquipo integrante : integrantes) {
             integrante.entrenamiento();
         }
